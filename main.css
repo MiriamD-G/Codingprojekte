@@ -36,6 +36,7 @@ nav svg #miriampath {
 
 nav {
     margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -44,10 +45,12 @@ h1, h2, h3, h4 {
     margin-top: 0px;
     margin-bottom: -15px;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 p, label, li {
     font-weight: 200;
+    font-size: 1.2rem;
+
 }
 .arrow {
     margin-top: 5px;

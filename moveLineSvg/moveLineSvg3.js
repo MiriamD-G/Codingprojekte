@@ -4,7 +4,7 @@ document.body.appendChild(mySVG)
 mySVG.setAttribute("viewBox", "-500 -500 1000 1000")
 
 
-function oneLine(ang, l, sw, c){
+function oneLine(x, y, ang, l, sw, c){
 
     const myLine = document.createElementNS(svgns, "line")
     const myg = document.createElementNS(svgns, "g")
@@ -13,10 +13,10 @@ function oneLine(ang, l, sw, c){
     mySVG.appendChild(myg)
 
     myLine.setAttribute("id", "line")
-    myLine.setAttribute("x1", -l/2)
-    myLine.setAttribute("y1", 0)
-    myLine.setAttribute("x2", l/2)
-    myLine.setAttribute("y2", 0)
+    myLine.setAttribute("x1", x-l/2)
+    myLine.setAttribute("y1", y)
+    myLine.setAttribute("x2", x+l/2)
+    myLine.setAttribute("y2", y)
     myLine.setAttribute("stroke-opacity", "0.3")
 
     myLine.setAttribute("stroke", "hsl("+c+", 50%, 50%)")
@@ -41,11 +41,10 @@ function oneLine(ang, l, sw, c){
     })
 }
 
-function flower(anzLine, l, sw){
+function flower(x, y, anzLine, l, sw){
     for(let i=0; i<anzLine; i++){
-        oneLine(i*(360/anzLine), l, (i+1)*sw, ((i*130)+210)%360)
+        oneLine(x, y, i*(360/anzLine), l, (i+1)*sw, ((i*3)+30)%360)
     }
 }
 
-flower(3, 400, 70)
-
+flower(100, 100, 45, 200, 2)

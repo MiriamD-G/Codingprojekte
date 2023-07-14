@@ -1,11 +1,4 @@
 body {
-    background-color: beige;
-    accent-color: green;
-    
-}
-h1, p, label, li {
-    color:black
-}
-nav svg #miriampath {
-    stroke: rgb(230, 210, 50)
+    background-color: rgb(250, 240, 250);
+    --text-color: rgb(230, 210, 50);
 }

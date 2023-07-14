@@ -31,7 +31,7 @@ function oneLine(ang, l, sw, c){
     myAnimation.setAttribute("type", "translate")
     myAnimation.setAttribute("values", `0 0; ${l/2} 0; 0 0`)
     myAnimation.setAttribute("dur", "6s")
-    myAnimation.setAttribute("repeatCount", "10")
+    myAnimation.setAttribute("repeatCount", "1")
     myAnimation.setAttribute("restart", "whenNotActive")
 
     myLine.addEventListener("mouseover", () => {
