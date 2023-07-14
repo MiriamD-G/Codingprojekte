@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(18, 28, 44);
+    accent-color: rgb(255, 150, 100);
+}
+h1, p, label, li {
+    color:rgb(255, 150, 100)
+}
+nav svg #miriampath {
+    stroke: rgb(255, 150, 100)
+}

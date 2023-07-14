@@ -1,0 +1,33 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: beige;
+}
+
+.miriampath {
+    stroke-dasharray: 0.1 15;
+    stroke-dashoffset: 24 160;
+    animation: miriamPathAnim 60s linear;
+    /* animation-direction: reverse; */
+}
+
+@keyframes miriamPathAnim {
+    from{
+        stroke-dashoffset: 1400;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* section div {
+    background: lightgreen
+} */
+
+a {
+    transition:
+        width 2s,
+        height 2s,
+}

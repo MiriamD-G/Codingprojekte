@@ -1,0 +1,17 @@
+body {
+    background-color: #3a3b36;
+    --text-color: #8bf699;
+}
+
+
+#picture-box {
+    display: grid;
+    grid-gap: 30px;
+}
+
+@media (min-width: 700px) {
+    #picture-box {
+        grid-gap: 60px 60px ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
