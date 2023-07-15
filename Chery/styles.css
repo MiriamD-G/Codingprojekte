@@ -1,0 +1,4 @@
+body {
+    background-color: hsl(0, 100%, 85%);
+    --text-color: hsl(79, 91%, 68%);
+}
