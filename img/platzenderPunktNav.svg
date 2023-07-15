@@ -6,6 +6,15 @@
 	.st0{opacity:0.3;fill:#0051FF;}
 	.st1{fill:#0051FF;}
 </style>
-<circle class="st0" cx="63.2" cy="38.3" r="30.9"/>
+<circle class="st0" cx="63.2" cy="38.3" r="30.9">
+	<animate
+		attributeType="XML"
+		attributeName="r"
+		from="3"
+		to="30.9"
+		dur="14s"
+		repeatCount="indefinite"/>
+	</circle>
 <circle class="st1" cx="63.2" cy="38.3" r="2.5"/>
+
 </svg>

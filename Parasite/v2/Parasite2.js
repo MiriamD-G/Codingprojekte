@@ -1,6 +1,9 @@
 function setup() {
     w = 600
     createCanvas(w, w);
+    let canvas = createCanvas(600, 600)
+    canvas.parent('p5-container')
+  
     colorMode(HSB, 360, 100, 100, 100)
   
     off = 70; // Abstand zum Rand

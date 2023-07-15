@@ -1,5 +1,8 @@
 function setup() {
     createCanvas(600, 600);
+    let canvas = createCanvas(600, 600)
+    canvas.parent('p5-container')
+  
   
     off = 20; // Abstand zum Rand
     spc = 25; // Abstand zwischen den einzelnen Punkten
