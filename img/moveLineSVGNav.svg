@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+    <style>
+        #move-line {
+        animation: moveline 4s infinite alternate ease-in-out;
+        }
+        @keyframes moveline {
+        0% {
+        transform: translateX(0);
+        }
+        100% {
+        transform: translateX(3px);
+        }
+        }
+    </style>
+    <line id="move-line" x1="2" y1="5" x2="4" y2="5" stroke="hsla(130, 100%, 50%, 0.5)"
+        stroke-width="3" stroke-linecap="round" />
+</svg>

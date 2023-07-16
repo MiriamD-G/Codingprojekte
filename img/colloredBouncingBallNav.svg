@@ -1,0 +1,22 @@
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+                <style>
+                    #hue-circle {
+                        animation: hueAnimation 12s infinite;
+                    }
+                    @keyframes hueAnimation {
+                        0% {
+                            fill: hsl(0, 30%, 70%)
+                        }
+                        33% {
+                            fill: hsl(120, 30%, 70%)
+                        }
+                        66% {
+                            fill: hsl(240, 30%, 70%)
+                        }
+                        100% {
+                            fill: hsl(359, 30%, 70%)
+                        }
+                    }
+                </style>
+                <circle id="hue-circle" cx="5" cy="5" r="4" />
+            </svg>

@@ -6,6 +6,8 @@ light.addEventListener("click", onClick);
 
 function setup() {
   createCanvas(600, 600, WEBGL);
+  let canvas = createCanvas(600, 600)
+  canvas.parent('p5-container')
   for (let i = 0; i < 40; i++) {
     blasen[i] = new Blase();
   }
