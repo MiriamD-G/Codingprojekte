@@ -3,8 +3,16 @@
 }
 
 body {
-    background-color: beige;
+    animation: backgroundani 30s linear infinite;
 }
+
+@keyframes backgroundani {
+    0% {background-color: hsl(0, 40%, 91%);}
+    25% {background-color: hsl(90, 56%, 91%);}
+    50% {background-color: hsl(180, 56%, 91%);}
+    75% {background-color: hsl(43, 100%, 91%);}
+    100% {background-color: hsl(0, 40%, 91%);}
+  }
 
 .miriampath {
     stroke-dasharray: 0.1 15;
@@ -22,8 +30,3 @@ body {
     }
 }
 
-a {
-    transition:
-        width 2s,
-        height 2s,
-}
