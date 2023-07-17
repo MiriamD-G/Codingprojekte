@@ -56,7 +56,7 @@ class Drops {
     show(){
         noStroke()
         // noFill()
-        fill(250, this.s, 100, 100)
+        fill(328, this.s, 100, 100)
         strokeWeight(3)
         // stroke(155, this.blue, 100)
         circle(this.x, this.y, this.r)
