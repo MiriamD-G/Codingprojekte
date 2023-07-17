@@ -8,9 +8,14 @@ function oneLine(ang, l, sw, c){
 
     const myLine = document.createElementNS(svgns, "line")
     const myg = document.createElementNS(svgns, "g")
+    const link = document.createElementNS(svgns, "a")
+    link.setAttribute('href', 'moveLineSvg3.html')
+
    
     myg.appendChild(myLine)
-    mySVG.appendChild(myg)
+    // mySVG.appendChild(myg)
+    mySVG.appendChild(link)
+    link.appendChild(myg)
 
     myLine.setAttribute("id", "line")
     myLine.setAttribute("x1", -l/2)

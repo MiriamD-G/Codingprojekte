@@ -2,15 +2,21 @@ const svgns = "http://www.w3.org/2000/svg"
 const mySVG = document.createElementNS(svgns, "svg")
 document.body.appendChild(mySVG)
 mySVG.setAttribute("viewBox", "-500 -500 1000 1000")
+const link = document.createElementNS(svgns, "a")
+link.setAttribute('href', 'moveLineSvg4.html')
+
 
 
 function oneLine(x, y, ang, l, sw, c){
 
     const myLine = document.createElementNS(svgns, "line")
     const myg = document.createElementNS(svgns, "g")
+
    
     myg.appendChild(myLine)
     mySVG.appendChild(myg)
+    mySVG.appendChild(link)
+    link.appendChild(myg)
 
     myLine.setAttribute("id", "line")
     myLine.setAttribute("x1", x-l/2)

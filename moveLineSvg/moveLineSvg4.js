@@ -2,14 +2,19 @@ const svgns = "http://www.w3.org/2000/svg"
 const mySVG = document.createElementNS(svgns, "svg")
 document.body.appendChild(mySVG)
 mySVG.setAttribute("viewBox", "0 0 1000 1000")
+const link = document.createElementNS(svgns, "a")
+link.setAttribute('href', 'index.html')
+
 
 
 function oneLine(ang, l, sw, c){
 
     const myLine = document.createElementNS(svgns, "line")
     const myg = document.createElementNS(svgns, "g")
+
    
     myg.appendChild(myLine)
+    
 
     myLine.setAttribute("id", "line")
     myLine.setAttribute("x1", -l/2)
@@ -48,7 +53,10 @@ function flower(x, y, anzLine, l, sw){
       myflowerg.appendChild(myg)
     }
     myflowerg.setAttribute("transform", "translate("+x+", "+y+")")
-    mySVG.appendChild(myflowerg)
+    mySVG.appendChild(myflowerg)    
+    mySVG.appendChild(link)
+    link.appendChild(myflowerg)
+    
 
 }
 
