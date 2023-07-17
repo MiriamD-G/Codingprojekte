@@ -111,3 +111,4 @@ createFlower(500, 500, 180, 3, 15)
 // Grafik-Elemente ins SVG einfügen
 mySVG.appendChild(myLine)
 mySVG.appendChild(petal)
+mySVG.setAttribute("id", "eye")

@@ -36,7 +36,13 @@
     </nav>
     <script src="snakeLineSvg3.js"></script>
     <script src="../p5.min.js"></script>
-
-    
+    <script>
+    const eye = document.getElementById("eye")
+    const link = document.createElement("a")
+    link.setAttribute("href", "index.html")
+    document.body.appendChild(link)
+    eye.remove()
+    link.appendChild(eye)
+    </script>
 </body>
 </html>

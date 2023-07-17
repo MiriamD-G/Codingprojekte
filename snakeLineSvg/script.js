@@ -11,9 +11,6 @@ mySVG.setAttribute("viewBox", "0 0 1000 1000")
 
 // Grafik-Elemente generieren
 const myLine = document.createElementNS(svgns, "line")
-const link = document.createElementNS(svgns, "a")
-link.setAttribute("href", "snakeLineSvg3.html") 
-
 
 // myLine.setAttribute("id", "lineLeaf")
 myLine.setAttribute("x1", "0")
@@ -83,7 +80,6 @@ function placeLeaf(x, y, sw, ang, distance){
     blatt.setAttribute("transform", "translate("+distance+", 0)")
     // blatt.setAttribute("stroke", "red")
     g.appendChild(blatt)
-
     return g
 }   
 
@@ -91,15 +87,15 @@ function createFlower(x, y, sw, leafNr) {
     for(var i=0; i<leafNr; i++){
         const flower = placeLeaf(x, y, sw, i*(360/leafNr), 35)
         flower.setAttribute("stroke", "green")
-        // mySVG.appendChild(flower)
-        mySVG.appendChild(link)
-        link.appendChild(flower)
-
+        mySVG.appendChild(flower)
     }
 }
 
 createFlower(500, 500, 30, 7)
 
 // Grafik-Elemente ins SVG einfügen
-mySVG.appendChild(myLine)
+// mySVG.appendChild(myLine)
+
 mySVG.appendChild(petal)
+mySVG.setAttribute("id", "flower")
+
