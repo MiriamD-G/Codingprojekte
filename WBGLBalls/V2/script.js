@@ -6,7 +6,7 @@ function setup(){
 createCanvas (600, 600, WEBGL)
 let canvas = createCanvas(600, 600)
 canvas.parent('p5-container')
-for (let i=0; i<140; i++){
+for (let i=0; i<120; i++){
     blasen[i] = new Blase()
 }
 }
@@ -22,7 +22,6 @@ function draw(){
     pointLight(50, 40, 150, -300, -300, 300)
     pointLight(100, 0, 0, 200, -600, -400)
     pointLight(0, 50, 130, 0, -300, -700)
-
 
 
     // rotateX(frameCount * 0.2)
